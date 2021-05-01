@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="script.js"></script>
     <title>Movie-Logger</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
 
         <div class="right">
             <ul>
-                <a href="#" class="btn">
+                <a href="#" class="btn" id="addMovieButton">
                     <li>Add Movies</li>
                 </a>
                 <a href="#mymovies">
@@ -35,47 +37,17 @@
 
     <div id="addArea" class="addArea">
         <form action="#" id="addForm">
-            <input type="text" id="searchBar" class="searchBar" placeholder="Search Movies" autocomplete="off">
+            <input type="text" id="searchBar" class="searchBar" placeholder="Search Movies" autocomplete="off" required>
             <button type="submit" class="btn search-btn">Search</button>
         </form>
-        <div class="flex" id="searchMovies">
-            <!-- <div class="card">
-                <div style="text-align: center;">
-                    <img src="https://image.tmdb.org/t/p/w300/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" width="200">
-                </div>
-                <h3 class="title">
-                    Title
-                </h3>
-                <div style="text-align: center;">
-                    <button class="btn addMovie-btn">Add Movie</button>
-                </div>
-            </div> -->
-        </div>
+        <div class="flex" id="searchMovies"></div>
     </div>
 
     <div id="mymovies">
         <h1 class="title">
             My Movies
         </h1>
-        <div class="flex" id="movies">
-            <!-- <div class="card">
-                <div style="text-align: center;">
-                    <img src="https://image.tmdb.org/t/p/w300/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" width="200">
-                </div>
-                <h3 class="title">
-                    Title
-                </h3>
-                <p class="small-text">
-                    Rating given: 10/10  
-                </p>
-                <p class="small-text">
-                    Review
-                </p>
-                <div style="text-align: center;">
-                    <button class="btn addMovie-btn">Delete Movie</button>
-                </div>
-            </div> -->
-        </div>
+        <div class="flex" id="movies"></div>
     </div>
 
     <div id="about">
