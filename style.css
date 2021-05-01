@@ -67,7 +67,8 @@ nav ul a:hover{
 }
 
 #addArea{
-    display: flex;
+    height: 100vh;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -75,7 +76,8 @@ nav ul a:hover{
 
 #mymovies{
     height: 100vh;
-    display: none;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -113,7 +115,6 @@ nav ul a:hover{
 }
 
 .card{
-    flex: 1/4;
     flex-basis: 17rem;
     height: fit-content;
     border: 3px solid black;
@@ -139,6 +140,10 @@ nav ul a:hover{
     flex-flow: wrap;
 }
 
+.small-text{
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
 
 
 
